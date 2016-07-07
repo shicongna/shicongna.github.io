@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<title> try jquery</title>
+	<style >
+.circle{
+	height: 170px;
+	width: 170px;
+	background-color: lightseagreen;
+	border-radius: 50%;
+	margin: 40px auto;
+}
+.circle.red{
+	background-color: deeppink;
+}
+	</style>
+</head>
+<body>
+	<h1>jQuery网址
+<a href="http://www.bootcdn.cn/jquery/">http://www.bootcdn.cn/jquery/</a>
+	</h1>
+	<div class="circle"></div>
+	<script>
+      $('.circle').click(function(){
+      	alert('hello clicked!!!');
+      	$('.circle').addClass('red');
+      });
+      
+ 	</script>
+</body>
+</html>

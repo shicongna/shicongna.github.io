@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>toggleClass</title>
+	<style >
+.circle{
+	width: 100px;
+	height: 100px;
+	background-color: teal;
+	border-radius: 50%;
+	margin: 30px auto;
+}
+.circle.red{
+	background-color: pink;
+}
+
+	</style>
+	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="circle"></div>
+	<script >
+   $('.circle').click(function(){
+   	$(this).toggleClass('red');
+   });
+	</script>
+</body>
+</html>

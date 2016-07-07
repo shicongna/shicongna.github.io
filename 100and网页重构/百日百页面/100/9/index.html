@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+<style>
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.parents{background-color: blue;border:3px red solid;}
+.left{background-color: pink;height: 50px;width: 20%;float: left;}
+.right{background-color: green;height: 50px;width:80%;float: right;}
+.parent{background-color: teal;margin-top: 20px;}
+.child{background-color: blue;height: 50px;margin-top:20px ;width: 80%;}
+a{text-decoration: none;}
+</style>
+</head>
+<body>
+	clearfix解决问题
+	<p>第一：解决父级菜单高度为0的问题</p>
+<div class="parents clearfix">
+  <div class="left">1</div>
+  <div class="right"></div>
+</div>
+ <p>第二：解决margin-top/buttom重合问题</p>
+  <div class="parent clearfix">
+  <div class="child"></div>
+</div>
+详见<h1><a href="http://haoduoshipin.com/v/166">网站视频详情"http://haoduoshipin.com/v/166"</a></h1>
+
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>卧龙控股</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		#header{
+			width: 100%;
+			height: 159px;
+		}
+		#header .header-top{
+			height: 100px;
+			background-image: url(imags);
+			position:relative;
+		}
+		#header .header-top .logo{
+			background-image: url(images/logo_03.png);
+			width: 244px;
+			height: 22px;
+			position:absolute;
+			top: 41px;
+			left: 20px;
+		}
+		#header .header-top .search input{
+			position: absolute;
+			right: 19px;
+			top: 39px;
+		}
+		#header .nav{
+			background-image: url(images/nav-bgi_03.jpg);
+			height: 59px;
+			width: 100%;
+		}
+		#header .nav ul{
+			width: 98%;
+			margin: 0 auto;
+		}
+		#header .nav li{
+			list-style: none;
+			float: left;
+			color: #fff;
+			width: 12%;
+			height: 59px;
+			text-align: center;
+			line-height:59px;
+			border-right:1px solid #4a4a4a; 
+		}
+		#header .nav ul li.source{
+			border-right: none;
+		}
+		#banner img{
+			width: 100%;
+			height: 463px;
+		}
+		#content .news {
+			width: 963px;
+			height: 228px;
+			margin:0 auto;	
+		}
+		#content .news .zixun a{
+			text-decoration: none;
+		}
+		#content .news .zixun span{
+			float: right;
+		}
+		#content .news .zixun{
+			float: left;
+			margin-top: 37px;
+			width: 478px;
+			height: 228px;
+		}
+		#content .news .zixun ul{
+			margin-top: 22px;
+		}
+		#content .news .zixun ul li{
+			line-height:24px;
+			color: #555; 
+			list-style-image: url(images/ul-lsi_14.jpg);
+		}
+		#content .news .jieshao{
+			float: left;
+			width: 240px;
+			height: 228px;
+			/*background-color: #f1f1f1;*/
+		}
+		#content .news .jieshao h2{
+			margin-top: 37px;
+			margin-left: 25px;
+		}
+		#content .news .jieshao .set{
+			margin-top: 39px;
+		}
+		#content .news .jieshao .year{
+			margin-top: 24px;
+			color: #959595;
+		}
+		#content .news .jieshao p{
+			line-height: 20px;
+			margin-left: 6px
+		}
+		#content .news .zhaopin{
+			float: left;
+			width: 245px;
+			height: 228px;
+			position:relative;
+			/*background-color: #fbfbfb;*/
+		}
+		#content .news .zhaopin h2{
+			margin-top: 37px;
+			margin-left: 25px;
+		}
+		#content .news .zhaopin p{
+			margin-left: 13px;
+			margin-top: 10px;
+			line-height: 25px;
+		}
+		#content .news .zhaopin a{
+			text-decoration: none;
+			color: #fff;
+		}
+		#content .news .zhaopin .more{
+			display: block;
+			width: 66px;
+			height: 19px;
+			background-color: #b0b0b0;
+			text-align: center;
+			line-height: 19px;
+			border-radius: 3px;
+			margin-left: 25px;
+			margin-top: 54px;
+		}
+		#content .news .zhaopin img{
+			width: 77px;
+			height: 106px;
+			position:absolute;
+			bottom: 0;
+			right: 0;
+		}
+		#content .market {
+			width: 963px;
+			height: 268px;
+			margin:0 auto;
+		}
+		#content .market h2{
+			margin-top: 43px;
+		}
+		#content .market ul{
+			width: 100%;
+			list-style: none;
+		}
+		#content .market ul li{
+			width: 210px;
+			height: 136px;
+			float: left;
+			margin-right: 30px;
+			margin-top: 16px;
+		}
+		#content .market ul li .four{
+			margin-right: none;
+		}
+		#content .market ul p{
+			line-height: 20px;
+			color: #757575;
+		}
+		#content .product {
+			width: 100%;
+			height: 250px;
+			margin-top: 50px;
+			background-color: #e5e5e5;
+		}
+		#content .product .center{
+			float: left;
+			width:50%;
+			height: 250px;
+		}
+		#content .product .center h2{
+			margin-left: 32px;
+			margin-top: 30px;
+		}
+		#content .product .center hr{
+			margin-left: 20px;
+			margin-top: 11px;
+		}
+		#content .product .center .box1{
+			float: left;
+			width: 151px;
+			height: 171px;
+			margin-left: 45px;
+			margin-top: 21px;
+			list-style-image: url(images/3ul-lsi_28.jpg);
+			line-height: 24px;
+		}
+		#content .product .center .box2{
+			float: left;
+			width: 192px;
+			height: 171px;
+			margin-top: 21px;
+			list-style-image: url(images/3ul-lsi_28.jpg);
+			line-height: 24px;
+		}
+		#content .product .center .box3{
+			float: left;
+			width: 104px;
+			height: 171px;
+			margin-top: 21px;
+			list-style-image: url(images/3ul-lsi_28.jpg);
+			line-height: 24px;
+		}
+		#content .product .study{
+			float: left;
+			width: 22%;
+			height: 250px;
+		}
+		#content .product .study h2{
+			margin-top: 30px;
+			margin-left: 62px;
+		}
+		#content .product .study hr{
+			margin-top: 11px;
+			margin-left: 50px;
+		}
+		#content .product .study ul{
+			margin-top: 21px;
+			margin-left: 59px;
+			list-style-image: url(images/3ul-lsi_28.jpg);
+		}
+		#content .product .study ul li{
+			line-height: 24px;
+		}
+		#content .product .sales{
+			float: left;
+			width: 28%;
+			height: 250px;
+		}
+		#content .product .sales h2{
+			margin-top: 30px;
+			margin-left: 72px;
+		}
+		#content .product .sales hr{
+			margin-top: 11px;
+			margin-left: 52px;
+		}
+		#content .product .sales img{
+			width: 170px;
+			height: 146px;
+			margin-top: 15px;
+			margin-left: 63px;
+		}
+		#footer  {
+			width:100%;
+			height: 81px;	
+		}
+		#footer .footer-nav{
+			width: 30%;
+			height: 81px;
+			float: left;
+			margin-top: 24px;
+		}
+		#footer .footer-nav ul{
+			width: 250px;
+			margin-left: 22px;
+		}
+		#footer .footer-nav ul li{
+			list-style: none;
+			float: left;
+			/*width: 68px;*/
+			border-right:1px solid #838383;
+			font-size: 13px;
+		}
+		#footer .footer-nav ul li .web{
+			margin-right: 7px;
+		}
+		#footer .footer-nav ul li .systerm{
+			/*width: 65px;*/
+			border-right: none;
+		}
+		#footer .copy-right{
+			width: 50%;
+			margin-top: 22px;
+			float: left;
+		}
+		#footer .share{
+			width: 20%;
+			margin-top: 22px;
+			float: left;
+		}
+		#footer .share span{
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="header-top">
+			<div class="logo"></div>
+			
+			<div class="search">
+				<input type="text" name="txt">
+			</div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li>集团介绍</li>
+				<li>产品中心</li>
+				<li>卧龙市场</li>
+				<li>技术研发</li>
+				<li>国际合作</li>
+				<li>投资者关系</li>
+				<li>国际合作</li>
+				<li class="source">人力资源</li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner">
+		<img src="images/banner_02.jpg">
+	</div>
+	<div id="content">
+		<div class="news">
+			<div class="zixun">
+				<h2>新闻资讯</h2>
+				<ul>
+					<li><a href="">企业文化是企业持关键因素uun聊了</a><span>2016-6-28</span></li>
+					<li><a href="">企业化是企业持续经营的关键因素</a><span>2016-6-28</span></li>
+					<li><a href="">企业文化是企业持续经营的关键因素打工</a><span>2016-6-28</span></li>
+					<li><a href="">企业文化是企业持续经营的关键因素不搞活动传给</a><span>2016-6-28</span></li>
+					<li><a href="">企业文化是企业持续经营的关键因素发</a><span>2016-6-28</span></li>
+					<li><a href="">企业文化是企业持续经营的关键因素紧急集合</a><span>2016-6-28</span></li>
+				</ul>
+			</div>
+			<div class="jieshao">
+				<h2>卧龙介绍</h2>
+				<p class="set">公司成立于1984年,</p>
+				<p >经过近30年的发展</p>
+				<p class="year">已成为电器制造,房地产开发金融<br/>投资三夜并举的综合性跨国...</p>
+			</div>
+			<div class="zhaopin">
+				<h2>人才招聘</h2>
+				<p>培养一流的人才,铸造一流的工程<br/> 实现员工与企业的共同发展</p>
+				<a href="#" class="more">MORE→</a>
+				<img src="images/pic1_11.jpg">
+			</div>
+		</div>
+		<div class="market">
+			<h2>卧龙市场</h2>
+			<ul>
+				<li><img src="images/picture_1.jpg"><p>交通轨道:由于主要采用电器牵引，而且滚轮摩擦阻力较小,与公共......</p></li>
+				<li><img src="images/picture_2.jpg"><p>节能环保:且滚轮摩擦阻力较小,与公sdfs的vsv</p></li>
+				<li><img src="images/picture_3.jpg"><p>航空与航箭：如果你是在公海行驶，你需要确保你的船只的电力系统.....</p></li>
+				<li class="four"><img src="images/picture_4.jpg"><p>石油,天然气与采矿：在市场中的安全性,可靠性,效率和最短的停机...</p></li>
+			</ul>
+		</div>
+		<div class="product">
+			<div class="center">
+				<h2>产品中心</h2>
+				<hr/>
+				<div class="box1">
+					<ul>
+						<li>汽车电机</li>
+						<li>日用电机</li>
+						<li>特种电机</li>
+						<li>大功率电机</li>
+						<li>电机设备</li>
+					</ul>
+				</div>
+				<div class="box2">
+					<ul>
+						<li>工业驱动和自动化</li>
+						<li>高压变频和系统集成</li>
+						<li>混泥土搅拌机</li>
+						<li>电动车辆</li>
+					</ul>
+				</div>
+				<div class="box3">
+					<ul>
+						<li>电源设备</li>
+						<li>输变电设备</li>
+						<li>楼盘信息</li>
+						<li>金融产品</li>
+					</ul>
+				</div>
+			</div>
+			<div class="study">
+				<h2>技术研发</h2>
+				<hr>
+				<ul>
+					<li>科技力量</li>
+					<li>先进设备</li>
+					<li>研发创新</li>
+					<li>工艺流程</li>
+				</ul>
+			</div>
+			<div class="sales">
+				<h2>营销网络</h2>
+				<hr>
+				<img src="images/map_25.jpg">
+			</div>
+
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer-nav">
+			<ul>
+				<li class="web">网站地图</li>
+				<li>联系我们</li>
+				<li>关注卧龙</li>
+				<li class="systerm">采购系统入口</li>
+			</ul>
+		</div>
+		<div class="copy-right">COPYRIGHT©2013卧龙控股集团,版权所有</div>
+		<div class="share"><span>
+			分享到：<img src="images/分享_03.jpg"></span></div>
+	</div>
+</body>
+</html>

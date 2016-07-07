@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景音乐添加</title>
+	<!-- <embed src="张靓颖 - 无字碑 (《武媚娘传奇》电视剧片尾主题曲).mp3" hidden="true" autostart="true" loop="true"> -->
+	<!-- 隐藏 自动播放 循环 --><!-- 方法一影响布局 -->
+	<style >
+	body{
+		background-color: mistyrose;
+	}
+	.main{
+			margin-top: 28px;
+			margin-left: 28px;
+	}
+	h3{
+		line-height: 30px;
+	}
+	</style>
+</head>
+<body>
+	<div class="main">
+	<audio controls="controls"  autoplay="autoplay" loop="loop">
+    <source src="你要播放的音乐.ogg" type="audio/ogg" />
+    <source src="张靓颖 - 无字碑 (《武媚娘传奇》电视剧片尾主题曲).mp3" type="audio/mpeg" />
+    </audio>
+    <div/>
+   <h3>本地背景音乐的添加：<br/>
+   1.下载正确的音乐格式，放到相应的路径中<br/>
+   2.用HTML5的audio标签来添加音乐<br/>
+     因为现在几乎所有的浏览器都兼容html5，除了少数古董浏览器，例如IE8等等。<br/>
+   audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop"><br/>
+  source src="你要播放的音乐.ogg" type="audio/ogg" /><br/>
+  source src="你要播放的音乐.mp3" type="audio/mpeg" /><br/>
+  /audio><br/>
+上面这段代码可以让播放器隐藏起来，不影响网页布局。</h3>
+
+</body>
+</html>

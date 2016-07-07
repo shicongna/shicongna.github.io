@@ -1,0 +1,218 @@
+*{
+	margin:0;
+	padding:0;
+}
+@font-face{
+ 	font-family: chunk;
+ 	src:url(../font/Chunkfive.otf);
+ 	}
+ @font-face{
+ 	font-family: Droid;
+ 	src:url(../font/DroidSerif-Italic.ttf);
+ 	}
+ 	.header{
+ 		background-image: url(../images/header-bgi.jpg);
+ 	}	
+.header .h-content{
+	width: 1079px;
+	height: 108px;
+	margin:0 auto;
+}
+.header .h-content .logo{
+	margin-left: 70px;
+	float: left;
+}
+.header .h-content .nav{
+	width: 397px;
+	height: 80px;
+	float: left;
+	margin-left: 42px;
+}
+.header .h-content .nav ul li{
+	list-style: none;
+	float: left;
+	margin-left: 30px;
+	margin-top: 22px;
+}
+.header .h-content .nav ul li:hover{
+	border-bottom: 4px solid #2e2d2d;
+}
+.header .h-content .nav ul  .home {
+	margin-left: 0px;
+	font-weight: bold;
+	border-bottom: 4px solid #2e2d2d;
+}
+.header .h-content .nav ul li a{
+	text-decoration: none;
+	font-family: "微软雅黑";
+	color:#323232;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+
+}
+.banner{
+	width: 100%;
+	background-image: url(../images/banner-bgi.jpg);	
+}
+.banner .banner-content{
+	width: 1079px;
+	height: 613px;
+	margin:0 auto;
+}
+.banner .banner-top{
+	height: 486px;
+	position: relative;
+}
+.banner .banner-top .arrow1{
+	position: absolute;
+	top:182px;
+}
+.banner .banner-top .arrow2{
+	position: absolute;
+	top:182px;
+	right:0px;
+}
+.banner .banner-top  .banner-content{
+	width: 1022px;
+	height: 486px;
+	margin:0 auto;
+}
+.banner .banner-top  .banner-content .left{
+	width: 550px;
+	height: 486px;
+	margin-left: 42px;
+	float:left;
+}
+.banner .banner-top  .banner-content .left h2{
+ 	font-family: chunk;
+ 	margin-top:34px; 
+ 	margin-left:11px;
+ }
+ .banner .banner-top  .banner-content .left p{
+ 	font-family: "Times New Roman";
+ 	font-size: 18px;
+ 	margin-left: 10px;
+ 	line-height: 30px;
+ 	margin-top: 23px;
+ }
+ .banner .banner-top  .banner-content .left img{
+ 	margin-top: 98px;
+ 	margin-left: 10px;
+ }
+.banner .banner-top  .banner-content .right{
+	float: left;
+}
+.banner .banner-bottom .list{
+	width: 135px;
+	height: 14px;
+	margin: 0 auto;
+}
+.banner .banner-bottom .list ul{
+	list-style: none;
+	margin-top: 54px;
+}
+.banner .banner-bottom .list ul li{
+	float: left;
+	margin-left: 11px;
+	width: 14px;
+	height: 14px;
+	background-color: #fff;
+	border-radius:50%;
+	border:1px solid #ccc;
+}
+.banner .banner-bottom .list ul li:hover{
+	background-color: #db373b;
+}
+.banner .banner-bottom .list ul li.second{
+	background-color: #db373b;
+}
+.footer .footer-top{
+	height: 389px ;
+	background-image: url(../images/bgi1.jpg);
+}
+.footer .footer-top .box{
+	width: 939px;
+	height: 479px;
+	margin:0 auto;
+}
+.footer .footer-top .box .left{
+	width: 560px;
+	float: left;
+}
+.footer .footer-top .box .left h3{
+	color: #ececec;
+	font-family: chunk;
+	font-size: 24px;
+	margin-top: 46px;
+}
+.footer .footer-top .box .left .p1{
+	color: #ececec;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 36px;
+	font-family: Droid;
+}
+.footer .footer-top .box .left .p2{
+	font-size: 16px;
+	font-family: Droid;
+	margin-top: 32px;
+	line-height: 23px;
+	color: #ececec;
+
+}
+.footer .footer-top .box .right{
+	float: left;
+	width: 302px;
+}
+.footer .footer-top .box .right h3{
+	color: #ececec;
+	font-family: chunk;
+	font-size: 24px;
+	margin-top: 46px;
+}
+.footer .footer-top .box .right ul{
+	list-style-image: url(../images/lsi.jpg);
+	margin-right:20px;
+	margin-left: 64px;
+}
+.footer .footer-top .box .right ul li{
+	height: 68px;
+	margin-top: 20px;
+	font-family: Droid;
+	font-size: 14px;
+	color:#666;
+	line-height: 25px;
+	float: right;
+}
+.footer .footer-top .box .right ul li span{
+	color: #ececec;
+}
+
+.footer .footer-bottom{
+	height: 90px;
+	background-image: url(../images/bgi2.jpg);
+	overflow: hidden;
+}
+.footer .footer-bottom .box1{
+	width: 250px;
+	height: 13px;
+	margin-top: 36px;
+	margin-left: 229px;
+	color:#e2e2e2;
+	font-family: " Arial";
+	font-size: 14px;
+}
+
+.footer .footer-bottom .box2 ul{
+list-style: none;
+margin-right: 230px;
+margin-top: -18px;
+}
+.footer .footer-bottom .box2 ul li{
+	float: right;
+	color:#e2e2e2;
+	font-family: " Arial";
+	font-size: 14px;
+	margin-left: 16px;
+}

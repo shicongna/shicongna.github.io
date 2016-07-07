@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+   <title>box-shadow</title>
+   <style>
+   a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+  }
+  .a,.b,.c,.d {
+    margin: 0 auto;
+    margin-top: 100px;}
+  .a {
+    width: 100px;
+    height: 100px;
+    background-color: mistyrose;
+    box-shadow: 10px 10px 10px #888}
+  .b{
+    width: 100px;
+    height: 100px;
+    background-color: palegreen;
+    box-shadow: 0px 0px 10px #0cc}
+  .c {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    box-shadow: 50px 50px #0cc;}
+  .d {
+    width: 100px;
+    height: 100px;
+    background-color:teal;
+    box-shadow:-10px 0 10px red,10px 0 10px yellow,0 -10px 10px blue, 0 10px 10px green}
+  /*可以设置四个边不同的阴影颜色，水平左，右，垂直上，下*/
+  /*box-shadow的第一个参数是水平偏移量,可以为0，第二个是垂直偏移量，第三个是软化程度，第四个是颜色*/
+   </style>
+  </head>
+  <body>
+    <h2>box-shadow详情<a href="http://www.w3school.com.cn/cssref/pr_box-shadow.asp">http://www.w3school.com.cn/cssref/pr_box-shadow.asp</a></h2>
+  	<div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>  
+  </body>
+</html>

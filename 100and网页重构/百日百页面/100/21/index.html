@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sidebar笔记</title>
+	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+	<style >
+    .side-nav {
+    background-color: deeppink;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 250px;
+    transition:all 1s .1s;
+    transform:translateX(-250px);}
+.side-nav.show {
+    transform:translateX(0px);
+}
+p {
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+}
+h1 {
+    font-family: arial;
+    font-size: 20px;
+    color: blue;
+    text-align: center;}
+	</style>
+</head>
+<body>
+	<h1>position；fixed的使用</h1>
+    <p>1.position：fixed和float一样不占位置，内容会跑到盒子下边,而且位置固定不动</br>
+    2.position和top,left,bottom,right配合使用,不设置固定高度,top=0 bottom=0高度则自由延伸</p>
+    <div class="side-nav"></div>
+    <script>
+    $('p').click(function(){
+        $('.side-nav').addClass('show');
+    })
+    </script>
+</body>
+</html>

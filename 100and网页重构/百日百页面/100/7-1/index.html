@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transition综合效果</title>
+	<style >
+    .box2{
+	width: 200px;
+	height: 200px;
+	background-color: deeppink;
+	position:relative;
+	margin-left: 190px;
+}
+.ball2{
+	width: 50px;
+	height: 50px;
+	background-color: lightseagreen;
+	position: absolute;
+	left:70px;
+	top:70px;
+
+    transition:all 1s;
+}
+.ball3{
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+	position: absolute;
+	left: 70px;
+	top: 70px;
+	transition: all 2s ;
+}
+.box2:hover .ball2{background-color: lime;top:150px;left: 150px;
+border-radius: 50%;
+}
+.box2:hover .ball3{background-color: mistyrose;top:150px;left: 0px;
+
+}
+
+	</style>
+</head>
+<body>
+	<h1>transition综合效果</h1>
+<div class="box2">
+	<div class="ball2">
+	</div>
+	<div class="ball3"></div>
+	
+</div>
+</body>
+</html>
