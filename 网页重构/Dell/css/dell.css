@@ -1,0 +1,258 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.header{
+	width: 1263px;
+	height: 101px;
+	margin:0 auto;
+}
+.header .header-top{
+	width: 1263px;
+	height: 31px;
+	background-color: #eee;
+}
+.header .header-top .first{
+	width: 250px;
+	height: 30px;
+	float: left;
+	margin-left: 150px;
+}
+.header .header-top .first p{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 30px;
+	color:#444;
+}
+.header .header-top .second{
+	width: 120px;
+	height: 30px;
+	float: right;
+	margin-right: 150px;
+}
+.header .header-top .second p{
+	font-family: "微软雅黑";
+	font-size: 15px;
+	line-height: 30px;
+	color: #087bd5;
+}
+.header .header-bottom{
+	background-color: #0085c3;
+	height: 70px;
+}
+.header .header-bottom img{
+	margin-left: 150px;
+	margin-top: 11px;
+	display: block;
+	float: left;
+}
+.header .header-bottom .nav{
+	float: left;
+	width: 405px;
+	height: 40px;
+	margin-left: 35px;
+	margin-top: 15px;
+}
+.header .header-bottom .nav ul li{
+	float: left;
+	list-style: none;
+	margin-right: 36px;
+}
+.header .header-bottom .nav ul .my{
+	margin-right: 0px;
+}
+.header .header-bottom .nav ul li a{
+	color:#fff;
+	line-height: 40px;
+	font-weight: bold;
+	text-decoration: none;	
+	font-size: 15px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.header .header-bottom .search{
+	float: right;
+	margin-right: 149px;
+	margin-top: 18px;
+	border-radius: 3px;
+	width: 335px;
+	height: 35px;
+	border:1px solid #dfdfdf;
+	background-color: #fff;
+}
+.header .header-bottom .search input {
+	border:none;
+	width: 265px;
+	height: 35px;	
+}
+.header .header-bottom .search span {
+	width: 68px;
+	height: 43px;
+}
+.header .header-bottom .search span a{
+	text-decoration: none;
+	color:#fff;
+	background-color:#057dc6;
+	text-align: center;
+	line-height: 33px;
+	font-family: "Arial";
+	font-size: 18px;
+	border:1px solid blue;
+	border-radius: #057dc6;
+}
+.banner{
+	width: 928px;
+	height: 379px;
+	margin:0 auto;
+}
+.container{
+	width: 928px;
+	height: 294px;
+	margin-top: 32px;
+	margin:0 auto;
+}
+.container .left{
+	width: 300px;
+	height: 284px;
+	float: left;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.container .center{
+	width: 300px;
+	height: 284px;
+	border-right: 1px solid #ccc;
+	float: left;
+	margin-left: 13px ;
+	margin-right: 11px;
+	border-bottom: 1px solid #ccc;
+}
+.container .right{
+	width: 300px;
+	height: 284px;
+	border-bottom: 1px solid #ccc;
+	float: left;
+	border-left: 1px solid #ccc;
+}
+.container h3{
+	margin-top: 10px;
+	margin-left: 21px;
+}
+.container img{
+	margin-top: 13px;
+}
+.container ul li{
+	list-style-image: url(../images/lsi.gif);
+	list-style-image: inside;
+}
+.container ul{
+	margin-top: 3px;
+	margin-left: 20px;
+}
+.container ul li a{
+	text-decoration: none;
+	color:#000;
+	font-family: "微软雅黑";
+	line-height: 21px;
+}
+.footer{
+	width: 100%;
+	height: 340px;
+	background-color: #0085c3;
+}
+.footer .top{
+	width: 100%;
+	height: 194px;
+}
+.footer .bottom{
+	width: 100%;
+	height: 72px;
+	border:1px solid green;
+	margin-top: 74px;
+}
+.footer .top .f1{
+	float: left;
+	width: 134px;
+	height: 160px;
+	margin-left: 150px;
+	margin-top: 32px;
+}
+.footer .top  p{
+	font-family: "Arial";
+	color: #fff;
+	font-weight: bold;
+}
+.footer .top  ul{
+	margin-top: 7px;
+}
+.footer .top  ul li{
+	list-style: none;
+	color:#fff;
+	line-height: 20px;
+	font-family: "Arial";
+	font-size: 14px;
+}
+.footer .top .f2{
+	float: left;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 32px;
+}
+.footer .top .f3{
+	float: left;
+	margin-top: 32px;
+}
+.footer .top .f4{
+float: left;
+margin-top: 32px;
+margin-left: 100px;
+margin-right: 115px;
+}
+.footer .top .f5{
+float: left;
+margin-top: 32px;
+}
+.footer .top .f5 p{
+	margin-top: 12px
+}
+.footer .top .f5 p img{
+	margin-left: 10px;
+}
+.footer .bottom .box{
+	width: 540px;
+	height: 50px;
+	margin:0 auto;
+}
+.footer .bottom .box ul li{
+	list-style: none;
+	float: left;
+	color:#fff;
+	font-weight: bold;
+	font-family: "Arial";
+	margin-right: 10px;
+}
+.footer .bottom .box ul .second{
+	margin-left: 14px;
+	margin-right: 14px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	width: 80px;
+	text-align: center;
+}
+.footer .bottom .box ul .map{
+	margin-left: 14px;
+	border-right: 1px solid #fff;
+	width: 90px;
+}
+.footer .bottom .box p{
+	font-family: "Arial";
+	color:#fff;
+	text-align: center;
+	margin-top: 25px;
+}
+.footer .bottom .box p img{
+	margin-left: 10px;
+}
+.footer .bottom .box p span{
+	margin-left: 30px;
+}
