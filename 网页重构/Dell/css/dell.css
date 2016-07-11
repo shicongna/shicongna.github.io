@@ -3,12 +3,12 @@
 	padding:0px;
 }
 .header{
-	width: 1263px;
+	width: 100%;
 	height: 101px;
 	margin:0 auto;
 }
 .header .header-top{
-	width: 1263px;
+	width: 100%;
 	height: 31px;
 	background-color: #eee;
 }
@@ -83,6 +83,7 @@
 	border:none;
 	width: 265px;
 	height: 35px;	
+	outline:none;
 }
 .header .header-bottom .search span {
 	width: 68px;
@@ -167,7 +168,6 @@
 .footer .bottom{
 	width: 100%;
 	height: 72px;
-	border:1px solid green;
 	margin-top: 74px;
 }
 .footer .top .f1{
