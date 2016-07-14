@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div img{
+			width: 300px;
+			height: 300px;
+			margin-left: 5px;
+		}
+		.box {
+			position: absolute;
+			width: 400px;
+			height: 400px;
+		}
+		.box img{
+			width: 480px;
+			height: 320px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="images/1.jpg" alt="">
+		<img src="images/2.jpg" alt="">
+		<img src="images/3.jpg" alt="">
+		<img src="images/4.jpg" alt="">
+	</div>
+	<div class="box">
+		
+	</div>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript">
+		$("div img").mouseenter(function(){
+			var src=$(this).attr("src")
+			var img=$("<img>")
+			img.attr("src",src)
+			$(".box").append(img)
+		}).mousemove(function(e){
+			var x=e.pageX;
+			var y=e.pageY;
+			$(".box").css({"top":y+10,"left":x+10})
+		}).mouseleave(function(){
+			$(".box img").remove()
+		})
+	</script>
+</body>
+</html>

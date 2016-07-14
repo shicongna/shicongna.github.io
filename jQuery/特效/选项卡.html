@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+		}
+		#list li{
+			float: left;
+			width: 98px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			border:1px solid red;
+			list-style: none;
+		}
+		.clear{
+			clear:both;
+		}
+		#content li{
+			width: 300px;
+			height: 300px;
+			border:1px solid green;
+			display: none;
+		}
+		#content .active{
+			display: block;
+			background-color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<ul id="list">
+		<li>选项一</li>
+		<li>选项二</li>
+		<li>选项三</li>
+	</ul>
+	<div class="clear"></div>
+	<ul id="content">
+		<li class="active">内容一</li>
+		<li>内容二</li>
+		<li>内容三</li>
+	</ul>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script >
+		$("#list li").click(function(){
+			var index=$(this).index();
+			$("#content li").eq(index).addClass("active").siblings().removeClass("active")
+		})
+	</script>
+</body>
+</html>

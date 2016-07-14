@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉菜单</title>
+	<style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	#list>li{
+		float: left;
+		width: 80px;
+		height: 30px;
+		text-align: center;
+		background-color: #ccc;
+		list-style: none;
+		line-height: 30px;
+		border:1px solid red;
+		cursor: pointer;
+	}
+	#list li .fruit {
+		background-color: green;
+		display: none;
+		list-style: none;
+	}
+	
+	</style>
+</head>
+<body>
+	<ul id="list">
+		<li>水果
+			<ul class="fruit">
+				<li>苹果</li>
+				<li>香蕉</li>
+				<li>草莓</li>
+			</ul>
+		</li>
+		<li>茶类
+			<ul class="fruit">
+				<li>红茶</li>
+				<li>绿茶</li>
+				<li>白茶</li>
+				<li>茉莉花茶</li>
+			</ul>
+		</li>
+		<li>
+			鞋类
+			<ul class="fruit">
+				<li>运动鞋</li>
+				<li>休闲鞋</li>
+			</ul>
+		</li>
+	</ul>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript">
+		$("#list>li").mouseenter(function(){
+			$(this).find("ul").slideDown(500)	
+		}).mouseleave(function(){
+			$(this).find("ul").slideUp(500)
+		})
+	</script>
+</body>
+</html>

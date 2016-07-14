@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#num-list li{
+			width: 40px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			border:1px solid red;
+			background-color: #ccc;
+			list-style: none;
+			float: left;
+			cursor:pointer;
+		}
+		#num-list .active{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="pic-box">
+		<img src="images/1.jpg" alt="">
+	</div>
+	<ul id="num-list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript">
+		$("#num-list li").click(function(){
+			var index=$(this).index();
+			var src="images/"+(index+1)+".jpg"
+			$("img").attr("src",src)
+			$(this).addClass("active").siblings().removeClass("active")
+		})
+	</script>
+</body>
+</html>
