@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.pic-box{
+			width: 480px;
+			overflow: hidden;
+		}
+		.pic-box ul {
+			width: 1920px;
+		}
+		.pic-box ul li{
+			list-style: none;
+			float: left;
+		}
+		#num-list li{
+			float: left;
+			width: 40px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			list-style: none;
+			border: 1px solid red;
+			background-color: #ccc;
+			cursor: pointer;
+		}
+		#num-list .green{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="pic-box">
+		<ul id="pic">
+			<li><img src="images/1.jpg" alt=""></li>
+			<li><img src="images/2.jpg" alt=""></li>
+			<li><img src="images/3.jpg" alt=""></li>
+			<li><img src="images/4.jpg" alt=""></li>
+		</ul>
+	</div>
+	<ul id="num-list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript">
+		$("#num-list li").click(function(){
+			var index=$(this).index()
+			num=index;
+			var marLeft=-480*index
+			$("#pic").animate({"margin-left":marLeft},500)
+			$(this).addClass("green").siblings().removeClass("green")
+		})
+		var num=0;
+		function autoplay(){
+			var ml=-480*num;
+			num++
+			if(num==4){
+				num=0
+			}
+			$("#pic").animate({"margin-left":ml},500)
+			$("#num-list li").eq(num-1).addClass("green").siblings().removeClass("green")
+		}
+		setInterval(autoplay,1000)
+		
+
+		
+	</script>
+</body>
+</html>

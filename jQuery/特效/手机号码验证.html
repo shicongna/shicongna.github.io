@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<label>手机号码:</label><input type="text" id="txt">
+	<p id="word"></p>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript">
+	var re=/^[0-9]{11}$/
+	$("#txt").blur(function(){
+	    	var val=$(this).val()
+	    	var result=re.test(val)
+	    	var span=checkput(result)
+	    	$("#word").html(span)
+	    })
+		function checkput(bool){
+			var rightSpan="<span>正确</span>"
+			var wrongSpan="<span>错误</span>"
+			if(bool){
+				return rightSpan
+			}else{
+				return wrongSpan
+			}
+		}
+	</script>
+</body>
+</html>

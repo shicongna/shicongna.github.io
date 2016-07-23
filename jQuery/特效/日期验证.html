@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.green{
+			color: green
+		}
+		.red{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label>日期</label>
+		<input type="text" id="txt">
+		<p id="info"></p>
+		<p id="word"></p>
+
+	</form>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript">
+		/*var re=/^[0-9a-z\-]{6,10}\@163\.com/
+		var str="1127894@163.com"
+		var result=re.test(str)
+		console.log(result)*/
+		var re=/([0-9]{4})\-([0-9]{2})\-([0-9]{2})/
+		$("#txt").blur(function(){
+			var value = $(this).val();
+			var result = re.exec(value);
+			
+			var span = checkinput(result);
+			$("#info").html(span);
+			var year=result[1];
+			var month=result[2];
+			var day=result[3];
+			var content="您输入内容为"+result[1]+"年,"+result[2]+"月,"+result[3]+"日"
+			$("#word").text(content)
+			
+		})
+		function checkinput(result){
+			var rightSpan="<span class='green'>格式正确</span>"
+			var wrongSpan="<span class='red'>请输入正确格式</span>"
+			if(result!=null){
+				return  rightSpan
+			}else{
+				return wrongSpan
+			}
+
+		}
+	</script>
+</body>
+</html>
