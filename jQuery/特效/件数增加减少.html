@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" id="btn1" value="-">
+	<span class="num"></span>
+	<input type="button" id="btn2" value="+">
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script>
+		var a=0;
+		$(".num").text(a)
+	$("#btn2").click(function(){
+		a++;
+	$(".num").text(a)	
+	})
+	$("#btn1").click(function(){
+		if(a!=0){
+			a--
+			$(".num").text(a)
+		}
+			
+		
+	})
+	
+	</script>
+
+</body>
+</html>

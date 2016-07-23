@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="">
+		<input type="text" class="txt">
+		<div>
+			<input type="button" value="0" class="num">
+			<input type="button" value="1" class="num">
+			<input type="button" value="2" class="num">
+			<input type="button" value="3" class="num">
+			<input type="button" value="4" class="num">
+			<input type="button" value="5" class="num">
+			<input type="button" value="6" class="num">
+			<input type="button" value="7" class="num">
+			<input type="button" value="8" class="num">
+			<input type="button" value="9" class="num">
+		</div>
+		<div>
+			<input type="button" value="+" class="sign">
+			<input type="button" value="-" class="sign">
+			<input type="button" value="*" class="sign">
+			<input type="button" value="/" class="sign">
+			<input type="button" value="=" class="result">
+			<input type="button" value="C" class="clear">
+		</div>
+	</form>
+
+	<script src="script/jquery.js"></script>
+	<script>
+		var num1 = "";
+		var num2 = "";
+		var sign = "";
+		$(".num").click(function(){
+			var value = $(this).val();
+			if(sign == ""){
+				num1 += value;
+				$(".txt").val(num1);
+			}else{
+				num2 += value;
+				$(".txt").val(num2);
+			}
+		})
+
+		$(".sign").click(function(){
+			sign = $(this).val();
+		})
+
+		$(".result").click(function(){
+			var result = 0;
+			switch(sign){
+				case "+" : result = Number(num1) + Number(num2); break;
+				case "-" : result = Number(num1) - Number(num2); break;
+				case "*" : result = Number(num1) * Number(num2); break;
+				case "/" : result = Number(num1) / Number(num2); break;
+			}
+			$(".txt").val(result);
+		})
+
+		$(".clear").click(function(){
+			num1 = "";
+			num2 = "";
+			sign = "";
+			$(".txt").val("");
+		})
+	</script>
+</body>
+</html>
