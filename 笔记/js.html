@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+		h1{
+			text-align: center;
+		}
+		.note{
+			margin:0 auto;
+			width: 900px;
+			background-color: #ccc;
+		}
+		p{
+			font-family: "微软雅黑";
+			margin-left: 6px;
+			line-height: 1.5;
+		}
+		h3{
+			margin-left: 6px;
+			margin-top: 2px;
+		}
+		ul li{
+			font-family: "微软雅黑";
+			margin-left: 6px;
+			line-height: 1.5;
+		}
+	</style>
+</head>
+<body>
+	<h1>js笔记</h1>
+  	<h2> js组成部分:ECMAscript Bom Dom</h2>
+	<h1>ECMAscript部分</h1>
+  	<div class="note">
+  		<h2>1.变量: 字母 下划线 $开头 驼峰命名法(firstName)</h2>
+  		<p>var 声明变量：未使用var关键字定义的变量都是全局变量<br/>
+		function rain(){<br/>
+       	&nbsp;	 x = 100;   &nbsp;//声明了全局变量x并进行赋值<br/>
+    }<br/>
+    rain();<br/>
+    alert( x );  	&nbsp;  //会弹出100<br/>
+
+这也是JavaScript新手常见的错误，无意之中留下的许多全局变量。
+		</p>
+  		<h3>变量作用域：if for Switch 不会创建新的执行环境，函数会创建新的执行环境与作用域</h3>
+  	</div>
+  	<div class="note">
+  		<h2>2.数据类型：对象 数字 字符串 boolean null undefined</h2>
+  		<ul>
+  			<li>类型转换：Number String parseInt parseFloat....<br>
+  				隐式转换if(){}&nbsp;==&nbsp;+&nbsp;-&nbsp;*&nbsp;/</li>
+  			<li>原始数据类型: 数字 字符串 boolean null undefined</li>
+  			<li>引用数据类型：对象</li>
+  			<li>原始数据类型与引用数据类型的区别：原始类型是值的比较，引用类型是所对应的对象是否相同（指针）</li>
+  			<li>类型检测 typeof(检测原始数据类型)  instance of（检测隐式转换）</li>
+  		</ul>
+  		<h3>2.1 对象:属性的无序集合</h3>
+  		<ul>
+  			<li>自定义对象</li>
+  			<li>数组对象Array()</li>
+  			<li>日期对象Date()</li>
+  			<li>数学对象Math</li>
+  			<li>正则表达式Rexep()</li>
+  		</ul>
+  	</div>
+  	<div class="note">
+  		<h2>3.语句</h2>
+  		<ul>
+  			<li>顺序</li>
+  			<li>分支 if; if else; else if; switch</li>
+  			<li>循环语句 for; for in; while; do while</li>
+  		</ul>
+  	</div>
+  	<div class="note">
+  		<h2>4.函数：声明函数function  返回值return 形参 实参 调用函数</h2>
+		<h2>JavaScript的作用域链</h2>
+  		<p>
+  			首先看下下面这段代码：<br>
+
+    var rain = 1;<br>
+    function rainman(){<br>
+       &nbsp; var man = 2;<br>
+     &nbsp; function inner(){<br>
+  &nbsp;  &nbsp;  var innerVar = 4;<br>
+      &nbsp; &nbsp;  &nbsp;alert(rain);<br>
+        &nbsp;  }<br>
+         &nbsp;  &nbsp; inner();    //调用inner函数<br>
+    &nbsp;  }<br>
+    rainman();    //调用rainman函数<br>
+
+观察alert(rain);这句代码。JavaScript首先在inner函数中查找是否定义了变量rain，如果定义了则使用inner函数中的rain变量；如果inner函数中没有定义rain变量，JavaScript则会继续在rainman函数中查找是否定义了rain变量，在这段代码中rainman函数体内没有定义rain变量，则JavaScript引擎会继续向上（全局对象）查找是否定义了rain；在全局对象中我们定义了rain = 1，因此最终结果会弹出'1'。
+作用域链：JavaScript需要查询一个变量x时，首先会查找作用域链的第一个对象，如果以第一个对象没有定义x变量，JavaScript会继续查找有没有定义x变量，如果第二个对象没有定义则会继续查找，以此类推。
+上面的代码涉及到了三个作用域链对象，依次是：inner、rainman、window。
+  		</p>
+  	</div>
+  	<div class="note">
+  		
+  	</div>
+
+</script>
+</body>
+</html>
