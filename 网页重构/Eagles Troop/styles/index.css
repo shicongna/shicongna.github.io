@@ -1,0 +1,257 @@
+*{
+	margin:0;
+	padding:0;
+}
+.header{
+	width: 1146px;
+	height: 142px;
+	margin:0 auto;
+	background-color: #000;
+}
+.header .header-in{
+	width: 970px;
+	height: 142px;
+	margin:0 auto;
+}
+.header .header-in .logo{
+	margin-top: 10px;
+	float: left;
+	margin-right: 53px;
+}
+.header .header-in .nav ul li{
+	float: left;
+	margin-top: 69px;
+	margin-right: 24px;
+	list-style: none;
+}
+.header .header-in .nav ul .about a{
+	color:#c92600;
+}
+.header .header-in .nav ul .contact{
+	margin-right: 0;
+}
+.header .header-in .nav ul li a{
+	text-decoration: none;
+	font-family: "Arial";
+	color: #7f7f7d;
+}
+.banner{
+	height: 347px;
+	width: 1146px;
+	margin:0 auto;
+	background-image: url(../images/banner-bgi_03.jpg);
+}
+.banner .banner-inner{
+	width: 994px;
+	height: 347px;
+	margin:0 auto;
+}
+.banner .banner-inner .word{
+	width: 588px;
+	height: 210px;
+	margin-top: 62px;
+	margin-left: 27px;
+	float: left;
+	margin-right: 40px;
+}
+.banner .banner-inner .word .img{
+	float: left;
+}
+.banner .banner-inner .word  h2{
+	color:#d2d2d2;
+}
+.banner .banner-inner .word p{
+	margin-top: 28px;
+	color:#7f7f7f;
+	line-height: 24px;
+	font-family: "微软雅黑";
+}
+.banner .banner-inner .word .more{
+	width: 106px;
+	height: 41px;
+	background-image: url(../images/more_09.jpg);
+	border-radius: 6px;
+	margin-left: 28px;
+	line-height: 41px;
+	text-align: center;
+	color:#fff;
+	font-size: 22px;
+	margin-top: 22px;
+}
+.banner .banner-inner .img {
+	margin-top: -35px;
+}
+.container{
+	width: 1146px;
+	height: 896px;
+	margin:0 auto;
+	background-image: url(../images/contentlii.jpg);
+}
+.container .top{
+	width: 940px;
+	height: 260px;
+	margin:0 auto;
+}
+.container .top ul li{
+	list-style: none;
+	float: left;
+	margin-top: 40px;
+}
+.container .top ul .img2{
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+.container .center{
+	width: 940px;
+	height: 310px;
+	margin:0 auto;
+	position:relative;
+}
+.container .center .left{
+	width: 620px;
+	height: 310px;
+	border-bottom:1px dotted #3c3d3d;
+	float: left;
+}
+.container .center .left h2{
+	color: #fff;
+	margin-top: 13px;
+}
+.container .center .left img{
+	position:absolute;
+	top:60px;
+}
+.container .center .left p{
+	color:#7f7f7f;
+	font-family: "Arial";
+	margin-left: 80px;
+	line-height: 1.5;	
+}
+.container .center .left .more{
+	width: 106px;
+	height: 41px;
+	background-image: url(../images/more_09.jpg);
+	border-radius: 6px;
+	margin-left: 82px;
+	line-height: 41px;
+	text-align: center;
+	color:#fff;
+	font-size: 22px;
+	margin-top: 26px;
+
+}
+.container .center .right .search{
+	width: 300px;
+	height: 50px;
+	background-color: #0e0f0f;
+	float: right;
+	border-radius: 8px;
+}
+.container .center .right .search h2{
+	text-align: center;
+	line-height: 50px;
+	color:#fff;
+}
+.container .center .right{
+	margin-left: 20px;
+}
+.container .center .right .navi {
+	float: right;
+	margin-right:40px;
+	margin-top: 20px;
+}
+.container .center .right ul li{
+	list-style-image: url(../images/lsi_18.jpg);
+	color:#fff;
+	margin-left: 20px;
+	font-family: "Arial";
+	line-height: 2;
+
+}
+.container .bottom{
+	position: relative;
+	width: 940px;
+	height: 320px;
+	margin: 0 auto;
+}
+.container .bottom .left{
+	width: 620px;
+	float: left;
+}
+.container .bottom .left img{
+	position: absolute;
+	top:30px;
+	left:;
+} 
+.container .bottom .left #pic{
+	left:80px;
+}
+.container .bottom .left p{
+	color:#7f7f7f;
+	font-family: "Arial";
+	margin-left: 320px;
+	line-height: 1.5;
+	margin-top: 30px;
+}
+.container .bottom .left .more{
+	width: 106px;
+	height: 41px;
+	background-image: url(../images/more_09.jpg);
+	border-radius: 6px;
+	margin-left: 82px;
+	line-height: 41px;
+	text-align: center;
+	color:#fff;
+	font-size: 22px;
+	margin-top: 26px;
+}
+.container .bottom .right{
+	width: 300px;
+	height: 232px;
+	background-color: #0f1010;
+	margin-top: 30px;
+	margin-left: 20px;
+	float: right;
+}
+.container .bottom .right h2{
+	color: #fff;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.container .bottom .right img{
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.container .bottom .right h3{
+	color: #fff;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.container .bottom .right p{
+	color:#7f7f7f;
+	font-family: "Arial";
+	line-height: 1.5;
+	margin-left: 20px;
+	margin-top: 4px;
+}
+.footer{
+	height: 150px;
+	width: 1146px;
+	margin:0 auto;
+	overflow: hidden;
+	background-image: url(../images/footer_32.jpg);
+}
+.footer .copyright{
+	margin-left: 175px;
+	color:#7f7f7f;
+	font-family: "Arial";
+	margin-top: 40px;
+	line-height: 1.5;
+	float:left;
+}
+.footer .link{
+	float: right;
+	margin-right: 80px;
+	margin-top: 50px;
+}
