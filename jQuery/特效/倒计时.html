@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		 div .red{
+			background-color: red;
+			width: 100px;
+			height: 50px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<span class="day"></span>:
+	<span class="hours">时</span>:
+	<span class="minutes">分</span>:
+	<span class="seconds"></span>
+	<div class="div"><input type="button" class="btn" value="开始抢购"></div>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script >
+		var str="2016-12-19 17:34:50"
+		var targetTime=new Date(str)
+		
+		function setTime(){
+			var timeNow=new Date()
+			var seconds=targetTime-timeNow
+			var day= Math.floor(seconds/(24*60*60*1000))
+			$(".day").text(day+"日")
+
+			var h=seconds%(24*60*60*1000)
+			var hours=Math.floor(h/(1000*60*60))
+			$(".hours").text(hours+"时")
+
+			var m=h%(1000*60*60)
+			var minutes=Math.floor(m/(1000*60))
+			$(".minutes").text(minutes+"分")
+			
+			var s=m%(1000*60)
+			var secs=Math.floor(s/1000)
+			$(".seconds").text(secs+"秒")
+			if(day==0 && hours==0 && minutes==0 && secs==0){
+			clearInterval(t)
+			$(".btn").addClass("red")
+		}
+		
+		}
+		
+		 var t=setInterval(setTime,1000)
+
+				// 不能为result==0;因为result为毫秒数，与都为0有千分之一的重合机会，使按钮不能变红，计时器不能停止
+		
+	</script>
+</body>
+</html>
