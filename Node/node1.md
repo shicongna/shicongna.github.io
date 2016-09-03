@@ -73,6 +73,7 @@ app.listen(3000,function(){
     "name":"my-web-site",
     "version":"0.0.0"
 }
+
 ### webstorm:javascript开发环境/工具(编辑器--node)
 ### 模板引入继承（header&&footer公共部分)
     extends layout
