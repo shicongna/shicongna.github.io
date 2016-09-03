@@ -67,8 +67,9 @@ app.listen(3000,function(){
 ********
 ### json:js对象表示法
 ### package.json: 记录依赖关系；     
-如  npm install --save-dev express/jade/body-parser/mongodb......
-语法：{
++ 如  npm install --save-dev express/jade/body-parser/mongodb......
+
++ 语法：{
     "name":"my-web-site",
     "version":"0.0.0"
 }
@@ -187,12 +188,12 @@ form(action="/checkqwer",method="post")
 ********
 ###mongodb（数据库）
 + mongodb 一个基于分布式文件存储的数据库:
- 1.mongod --dbpath=e:/db   ~~~~~~启动数据库（新建）
- 2.mongodb下载一般存放地址:
++ mongod --dbpath=e:/db   ~~~~~~启动数据库（新建）
++ mongodb下载一般存放地址:
     windowC盘-program Files-Mongodb-sever-3.2-bin- (环境变量)
- 3.mongo    ~~~~~~connect test 数据库连接成功
- 4.操作数据库：增 删 改 查
- 5.客户端服务器与数据库连接操作数据库(在node环境下)
++ mongo    ~~~~~~connect test 数据库连接成功
++ 操作数据库：增 删 改 查
++ 客户端服务器与数据库连接操作数据库(在node环境下)
  ```
  var MongoClient = require("mongodb").MongoClient;
 var url = "mongodb://127.0.0.1:27017/mydb";
@@ -212,22 +213,25 @@ MongoClient.connect(url,function(err,db) {
     // })
 })
  ```
+
  ********
+
  ### 服务器(sever.js)
  #### 前台请求：
- + <a href=" "></a>
- + 表单<form action=" "></form>
+ + <!-- <a href=" "></a> -->
+ + 表单<!-- <form action=" "></form> -->
  + $.ajax({ })
  + Xmlhttp
  #### 后台接收响应：
- 1.后台接收：
+ ##### 后台接收：
  + get方法 req.query
  + post方法 req.body(依赖body-parser模块)
- 2.后台响应：
+ ##### 后台响应：
  + res.send("a")(依赖express模块)
  + res.end("a")
  + res.render("home")(依赖jade模块)
  + res.redirect("/home")
+ 
  ********
  ###前后台数据交互
  ```
